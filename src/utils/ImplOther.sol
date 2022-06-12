@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.14;
 
-contract Impl {
+contract ImplOther {
     uint256 private _x;
 
     function getX() public view returns (uint256) {
