@@ -2,6 +2,8 @@
 
 Ditto is a metapmorphic contract mechanism coined initially by [@0age's](https://twitter.com/z0age) [metamorphic](https://github.com/0age/metamorphic) contracts. They are absolutely mind-blowing, please check that out.
 
+This has also been attempted by [@ricmoo's](https://github.com/ricmoo) [wisp](https://blog.ricmoo.com/wisps-the-magical-world-of-create2-5c2177027604) contracts.
+
 ```javascript
 /*
  * 			⠀⠀⠀⢠⡜⠛⠛⠿⣤⠀⠀⣤⡼⠿⠿⢧⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
