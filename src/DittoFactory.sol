@@ -150,7 +150,7 @@ contract DittoFactory {
         /* solhint-disable no-inline-assembly */
         assembly {
             ephemeral := create2(
-                0,
+                callvalue(),
                 add(0x20, _ephemeralCode),
                 mload(_ephemeralCode),
                 salt

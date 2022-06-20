@@ -6,6 +6,7 @@ import {console} from "@std/console.sol";
 
 import {DittoFactory} from "../DittoFactory.sol";
 import {Impl} from "../utils/Impl.sol";
+import {ImplOther} from "../utils/ImplOther.sol";
 import {ImplConstructor} from "../utils/ImplWithConstructor.sol";
 import {Ephemeral} from "../Ephemeral.sol";
 
@@ -15,17 +16,19 @@ contract TestDittoFactory is Test {
     using GetCode for address;
 
     Impl public impl;
+    ImplOther public implOther;
     ImplConstructor public implConstructor;
     DittoFactory public dittoFactory;
 
     function setUp() public {
         impl = new Impl();
+        implOther = new ImplOther();
         implConstructor = new ImplConstructor();
 
         dittoFactory = new DittoFactory(type(Ephemeral).creationCode);
     }
 
-    function testimpostor() public {
+    function testImpostor() public {
         bytes32 salt = bytes32(uint256(uint160(address(impl))));
 
         address impostor = dittoFactory.impostor(

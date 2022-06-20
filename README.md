@@ -50,7 +50,7 @@ The initialization bytecode follows these steps:
 
 STACK:
 0000: gas		(gas)
-0001: caller	(caller)
+0001: caller		(caller)
 0002: 28		(memory offset)
 0003: 4			(memory size)
 0004: 0			(returndata offset)
@@ -67,7 +67,7 @@ STACK:
 
 STACK:
 0000: gas		(gas)
-0001: caller	(caller)
+0001: caller		(caller)
 0002: 28		(memory offset)
 0003: 4			(memory size)
 0004: 0			(returndata offset)
@@ -83,7 +83,7 @@ MEMORY:
 ```bash
 0011    FA  STATICCALL
 STACK:
-0000: 1		(success)
+0000: 1			(success)
 0001: 0
 
 MEMORY:
@@ -98,7 +98,7 @@ MEMORY:
 0014    51  MLOAD
 
 STACK:
-0000: address		(implementation address)
+0000: address			(implementation address)
 0001: 1				(success)
 0000: 0
 
@@ -116,7 +116,7 @@ MEMORY:
 STACK:
 0000: size			(contract size)
 0001: size			(contract size)
-0002: address		(implementation address)
+0002: address			(implementation address)
 0003: 1
 0004: 0
 
@@ -133,7 +133,7 @@ MEMORY:
 001B    92  SWAP3
 
 STACK:
-0000: address		(address)
+0000: address			(address)
 0001: 0				(dest offset)
 0002: 0				(offset)
 0003: size			(size)
